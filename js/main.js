@@ -232,3 +232,7 @@ $(document).on('keydown', function (e) {
   if (e.key === 'ArrowRight') $('.horses__slider').slick('slickNext');
   if (e.key === 'ArrowLeft') $('.horses__slider').slick('slickPrev');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  window.scrollTo({ top: 0, left: 0 });
+});
