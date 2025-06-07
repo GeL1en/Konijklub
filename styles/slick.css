@@ -1,0 +1,127 @@
+/* === Основной контейнер слайдера === */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    /* Запрет на выделение текста */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    /* Запрет вызова меню при долгом тапе */
+    -webkit-touch-callout: none;
+
+    /* Поддержка жестов на touch-устройствах */
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+
+    /* Удаление подсветки при тапе на iOS */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* === Область отображения слайдов === */
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden; /* Скрывает невидимые слайды */
+    margin: 0;
+    padding: 0;
+}
+
+/* Удаляем обводку при фокусе */
+.slick-list:focus {
+    outline: none;
+}
+
+/* При перетаскивании курсор меняется */
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* Ускорение анимаций за счёт GPU */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+
+/* === Трек, содержащий все слайды === */
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Табличный хак для clearfix */
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+.slick-track:after {
+    clear: both;
+}
+
+/* Скрытие контента при загрузке */
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+/* === Индивидуальный слайд === */
+.slick-slide {
+    display: none; /* Скрыт до инициализации */
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+/* Поддержка для RTL (справа налево) */
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+/* Слайды могут содержать изображение */
+.slick-slide img {
+    display: block;
+}
+
+/* Пока слайд загружается — скрываем картинку */
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+/* Убираем события с картинки во время перетаскивания */
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+/* После инициализации показываем слайды */
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+/* Пока идёт загрузка — скрываем слайды */
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+/* Поддержка вертикального слайдера */
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/* Скрытие стрелок, если они отключены */
+.slick-arrow.slick-hidden {
+    display: none;
+}

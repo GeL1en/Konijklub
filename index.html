@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <title>Максимус - конный клуб</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Montserrat:wght@600&family=Philosopher:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/slick.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Шапка сайта: логотип, меню, телефон, заголовок -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__top">
+            <a class="header__logo-link" href="index.html">
+              <img class="header__logo" src="image/logo.png" alt="logo">
+            </a>
+            <div class="header__burger-menu">
+              <p>Меню</p>
+              <div></div>
+            </div>
+            <nav class="header__menu">
+              <div class="header__menu-cross">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <rect width="17" height="1" transform="matrix(-0.707107 -0.707107 0.707103 -0.707111 13.0005 13)" fill="white"/>
+                  <rect width="17" height="1" transform="matrix(-0.707107 0.707107 -0.707103 -0.707111 14 1)" fill="white"/>
+                </svg>
+              </div>
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a href="#about">О нас</a></li>
+                <li class="header__menu-item"><a href="#benefits">Услуги</a></li>
+                <li class="header__menu-item"><a href="#horses">Фотоальбом</a></li>
+                <li class="header__menu-item"><a href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__tel">
+              <div class="header__tel-inner">
+                <a class="header__tel-number" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                <div class="header__tel-hour">Ежедневно 9:00 – 22:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__body">
+            <h1 class="header__body-text">
+              Окунитесь в мир<br>
+              лошадей вместе с нами
+            </h1>
+            <p class="header__body-address">
+              Уроки верховой езды, фотосессии и мероприятия<br>
+              в частном конном клубе <span>г. Санкт-Петербург</span>
+            </p>
+            <a id="openFormBtn" class="header__body-btn button" href="#">
+              <span>записаться</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Раздел «О нашем клубе»: достижения, текст, изображение -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <h2 class="heading__title about__title">О нашем клубе</h2>
+            <div class="about__content">
+              <div class="about__img">
+                <img src="image/about-horse.jpg" alt="">
+              </div>
+              <div class="about__achievements">
+                <div class="about__achievement">
+                  <span>1100+</span><br>
+                  Довольный посетителей
+                  за последний год
+                </div>
+                <div class="about__achievement">
+                  <span>50+</span><br>
+                  Проведенных мероприятий
+                  за 6 месяцев
+                </div>
+                <div class="about__achievement">
+                  <span>20+</span><br>
+                  Выпущенных профессиональных
+                  спортсменов за 1 год
+                </div>
+                <div class="about__achievement">
+                  <span>15+</span><br>
+                  Регулярный занятий
+                  в неделю с профессиональными наставниками
+                </div>
+              </div>
+              <div class="about__text">
+                Занятия проводятся индивидуально и в группах, стоимость также будет зависеть от ваших навыков и
+                умений.
+                Более выгодные условия
+                предусмотрены для регулярных занятий при покупке абонементов.
+                Для тех, кто хочет отточить своё мастерство, разработаны программы по специализации (конкур, выездка
+                и другие), участие в соревнованиях и чемпионатах. Для самых маленьких любителей лошадей действуют
+                пони-клубы, где ребята учатся ухаживать за животными и ездить на милых и добрых пони.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Почему нас выбирают: блок с преимуществами -->
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <h2 class="heading__title benefits__title">Почему нас выбирают</h2>
+            <div class="benefits__list">
+              <div class="benefits__list-row">
+                <div class="benefits__item">
+                  <div class="benefits__item-img" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="image/benefits/1.png" alt="" class="decorative-floating" style="max-width: 120px; height: auto;">
+                  </div>
+                  <h3 class="benefits__item-title">Удобное расположение</h3>
+                  <p class="benefits__item-desc">
+                    Мы находимся недалеко
+                    от автостанции «Восточный» чтобы вам было удобно добираться
+                  </p>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__item-img" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="image/benefits/2.png" alt="" class="decorative-floating" style="max-width: 150px; height: auto;">
+                  </div>
+                  <h3 class="benefits__item-title">Обеденная зона </h3>
+                  <p class="benefits__item-desc">
+                    Имеется столовая, чтобы Вы могли перекусить и немного отдохнуть. Бесплатно чай, кофе, печенки.
+                  </p>
+                </div>
+              </div>
+              <div class="benefits__list-row">
+                <div class="benefits__item">
+                  <div class="benefits__item-img" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="image/benefits/3.png" alt="" class="decorative-floating" style="max-width: 150px; height: auto;">
+                  </div>
+                  <h3 class="benefits__item-title">Профессиональные тренера</h3>
+                  <p class="benefits__item-desc">
+                    Наши преподаватели имеют награды в конном спорте, и отличные отзывы среди наших учеников
+                  </p>
+                </div>
+                <div class="benefits__item" >
+                  <div class="benefits__item-img" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="image/benefits/4.png" alt="" class="decorative-floating" style="max-width: 150px; height: auto;">
+                  </div>
+                  <h3 class="benefits__item-title">Бесплатная парковка</h3>
+                  <p class="benefits__item-desc">
+                    У нас имеется просторная парковка, чтобы вы могли без проблем припарковать свой автомобиль
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Направления клуба: уроки, прогулки, фотосессии -->
+      <section class="directions">
+        <div class="container">
+          <div class="directions__inner">
+            <h2 class="heading__title directions__title">Направления клуба</h2>
+            <div class="directions__cards">
+              <div class="directions__card">
+                <div class="directions__card-img">
+                  <img src="image/directions/1.jpg" alt="">
+                </div>
+                <div class="directions__card-text">
+                  <p class="directions__card-title">
+                    Уроки верховой езды
+                  </p>
+                  <div class="directions__card-badge"></div>
+                  <p class="directions__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="directions__card">
+                <div class="directions__card-img">
+                  <img src="image/directions/2.jpg" alt="">
+                </div>
+                <div class="directions__card-text">
+                  <p class="directions__card-title">
+                    Прогулки верхом с тренером
+                  </p>
+                  <div class="directions__card-badge"></div>
+                  <p class="directions__card-desc">
+                    Тренировка клиентов, подготовка
+                    к занятиям конным спортом
+                    на профессиональном уровне под руководством опытных теннеров
+                  </p>
+                </div>
+              </div>
+              <div class="directions__card">
+                <div class="directions__card-img">
+                  <img src="image/directions/3.jpg" alt="">
+                </div>
+                <div class="directions__card-text">
+                  <p class="directions__card-title">
+                    Фотосессии
+                  </p>
+                  <div class="directions__card-badge"></div>
+                  <p class="directions__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="directions__card">
+                <div class="directions__card-img">
+                  <img src="image/directions/4.jpg" alt="">
+                </div>
+                <div class="directions__card-text">
+                  <p class="directions__card-title">
+                    Прогулки верхом с тренером
+                  </p>
+                  <div class="directions__card-badge"></div>
+                  <p class="directions__card-desc">
+                    Тренировка клиентов, подготовка
+                    к занятиям конным спортом
+                    на профессиональном уровне под руководством опытных теннеров
+                  </p>
+                </div>
+              </div>
+              <div class="directions__card">
+                <div class="directions__card-img">
+                  <img src="image/directions/5.jpg" alt="">
+                </div>
+                <div class="directions__card-text">
+                  <p class="directions__card-title">
+                    Фотосессии
+                  </p>
+                  <div class="directions__card-badge"></div>
+                  <p class="directions__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="directions__card">
+                <div class="directions__card-img">
+                  <img src="image/directions/6.jpg" alt="">
+                </div>
+                <div class="directions__card-text">
+                  <p class="directions__card-title">
+                    Прогулки верхом с тренером
+                  </p>
+                  <div class="directions__card-badge"></div>
+                  <p class="directions__card-desc">
+                    Тренировка клиентов, подготовка
+                    к занятиям конным спортом
+                    на профессиональном уровне под руководством опытных теннеров
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="directions__btn-box">
+              <a class="directions__btn button" href="#">
+                <span>записаться</span>
+              </a>
+            </div>
+          </div>
+          <div class="directions__decor-img">
+            <img class="directions__decor-left-horse" src="image/directions/horse1.png" alt="">
+            <img class="directions__decor-right-horse" src="image/directions/horse2.png" alt="">
+          </div>
+        </div>
+        <img class="directions__decor-cloud" src="image/directions/cloud.png" alt="">
+      </section>
+      <!-- Наши лошади: слайдер карточек с описанием -->
+      <section class="horses" id="horses">
+        <div class="container">
+          <div class="horses__inner">
+            <h2 class="heading__title horses__title">Наши лошади</h2>
+            <div class="horses__slider">
+
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/1.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Жазель
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/2.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Юджин
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/3.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Мелисса
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/4.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Грей
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/5.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Камелия
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/6.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Дункан
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/7.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Дастан
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/8.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Аманда
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+              <div class="horses__card">
+                <div class="horses__card-img">
+                  <img src="image/horses/9.jpg" alt="">
+                </div>
+                <div class="horses__card-text">
+                  <p class="horses__card-title">
+                    Глория
+                  </p>
+                  <div class="horses__card-badge"></div>
+                  <p class="horses__card-desc">
+                    Уроки профессиональной верховой езды для любителей и начинающих
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="horses__slider-nav">
+              <div class="horses__arrow horses__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                  <path d="M3.27231 7.5L9 1.6664L7.36385 0L-3.23429e-07 7.5L7.36385 15L9 13.3336L3.27231 7.5Z" fill="#6A5300" />
+                </svg>
+              </div>
+              <div class="horses__slider-dots"></div>
+              <div class="horses__arrow horses__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                  <path d="M5.72769 7.5L0 1.6664L1.63615 0L9 7.5L1.63615 15L0 13.3336L5.72769 7.5Z" fill="#6A5300" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Форма обратной связи: вопросы, имя, телефон -->
+      <section class="questions">
+        <div class="container">
+          <div class="questions__inner">
+            <div class="questions__decor">
+              <img class="questions__decor-girl" src="image/questions/girl.png" alt="">
+              <img class="questions__decor-cloud--top" src="image/questions/cloud-top.png" alt="">
+              <img class="questions__decor-cloud--bottom" src="image/questions/cloud-bottom.png" alt="">
+            </div>
+            <form class="questions__form">
+              <img class="questions__decor-tree" src="image/questions/tree.png" alt="">
+              <h2 class="heading__title questions__form-title">Отвечаем на вопросы</h2>
+              <p class="questions__form-text">
+                Мы ответим на все ваши вопросы по телефону,
+                или вы можете записаться на <span>бесплатное</span>
+                пробное занятие
+              </p>
+              <div class="questions__form-inputs">
+                <input class="questions__form-input" id="questions-input-name" type="text" placeholder="Ваше имя" required>
+                <input class="questions__form-input" id="questions-input-tel" type="tel" placeholder="Ваш телефон" required>
+                <button class="questions__form-btn button" type="submit">
+                  <span>Задать вопрос</span>
+                </button>
+                <div class="questions__checkbox">
+                  <div class="questions__checkbox-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                      <path d="M11.0134 0L4.5134 7.44671L1.9867 4.55229L0 6.8288L4.51343 12L13 2.27656L11.0134 0Z" fill="#008139"/>
+                    </svg>
+                    <input type="checkbox" id="questions-check" name="questions-checkbox" value="1" required>
+                  </div>
+                  <label class="questions__checkbox-text" for="questions-check">Даю согласие на <span>обработку данных</span></label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="reviews__inner">
+            <h2 class="heading__title reviews__title">Отзывы наших гостей</h2>
+
+            <div class="reviews__slider">
+
+              <!-- Отзыв 1 -->
+              <div class="review__card">
+                <p class="review__text">Конный клуб отличный! Лошади ухоженные, тренеры доброжелательные. Понравилось всё!</p>
+                <div class="review__author">
+                  <img src="image/user/user2.png" alt="Анна Смирнова">
+                  <div class="review__info">
+                    <div class="review__name">Анна Смирнова</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 2 -->
+              <div class="review__card">
+                <p class="review__text">Дочка занимается верховой ездой с удовольствием. Наставники — настоящие профессионалы!</p>
+                <div class="review__author">
+                  <img src="image/user/user3.png" alt="Марина К.">
+                  <div class="review__info">
+                    <div class="review__name">Марина К.</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 3 -->
+              <div class="review__card">
+                <p class="review__text">Прекрасное место! Природа, свежий воздух и невероятные эмоции от общения с лошадьми.</p>
+                <div class="review__author">
+                  <img src="image/user/user1.png" alt="Сергей Иванов">
+                  <div class="review__info">
+                    <div class="review__name">Сергей Иванов</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 4 -->
+              <div class="review__card">
+                <p class="review__text">Долго искали клуб с душой — и нашли! Ребёнок в восторге от занятий.</p>
+                <div class="review__author">
+                  <img src="image/user/user3.png" alt="Ольга С.">
+                  <div class="review__info">
+                    <div class="review__name">Ольга С.</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 5 -->
+              <div class="review__card">
+                <p class="review__text">Уроки проходят на высшем уровне. Индивидуальный подход к каждому!</p>
+                <div class="review__author">
+                  <img src="image/user/user2.png" alt="Наталья Р.">
+                  <div class="review__info">
+                    <div class="review__name">Наталья Р.</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 6 -->
+              <div class="review__card">
+                <p class="review__text">Побывала на фотосессии — атмосфера невероятная! И фото получились супер!</p>
+                <div class="review__author">
+                  <img src="image/user/user2.png" alt="Екатерина Л.">
+                  <div class="review__info">
+                    <div class="review__name">Екатерина Л.</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 7 -->
+              <div class="review__card">
+                <p class="review__text">Спасибо за заботу о детях! Безопасно, интересно и с любовью к каждому ученику.</p>
+                <div class="review__author">
+                  <img src="image/user/user3.png" alt="Ирина">
+                  <div class="review__info">
+                    <div class="review__name">Ирина</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 8 -->
+              <div class="review__card">
+                <p class="review__text">Очень атмосферное место. Приезжаем всей семьёй — и младшие, и взрослые в восторге.</p>
+                <div class="review__author">
+                  <img src="image/user/user1.png" alt="Фёдор П.">
+                  <div class="review__info">
+                    <div class="review__name">Фёдор П.</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+              <!-- Отзыв 9 -->
+              <div class="review__card">
+                <p class="review__text">Настоящий отдых душой. Лошади спокойные, персонал заботливый. Спасибо!</p>
+                <div class="review__author">
+                  <img src="image/user/user2.png" alt="Александра М.">
+                  <div class="review__info">
+                    <div class="review__name">Александра М.</div>
+                  </div>
+                </div>
+                <div class="review__socials">
+                  <a href="https://instagram.com" target="_blank"><img src="image/icons/inst.svg" alt="Instagram"></a>
+                  <a href="https://vk.com" target="_blank"><img src="image/icons/vk.svg" alt="VK"></a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Навигация слайдера -->
+            <div class="reviews__slider-nav">
+              <div class="reviews__arrow reviews__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                  <path d="M3.27231 7.5L9 1.6664L7.36385 0L0 7.5L7.36385 15L9 13.3336L3.27231 7.5Z" fill="#6A5300" />
+                </svg>
+              </div>
+              <div class="reviews__slider-dots"></div>
+              <div class="reviews__arrow reviews__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                  <path d="M5.72769 7.5L0 1.6664L1.63615 0L9 7.5L1.63615 15L0 13.3336L5.72769 7.5Z" fill="#6A5300" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Контакты: адрес, телефон, email, расписание, соцсети -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__block">
+            <h2 class="heading__title contacts__title">О нашем клубе</h2>
+            <div class="contacts__badge"></div>
+            <div class="contacts__list">
+              <div class="contacts__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="22" viewBox="0 0 14 22" fill="none">
+                  <path d="M7 0C3.1332 0 0 3.06679 0 6.86554C0 13.4339 7 22 7 22C7 22 14 13.4325 14 6.86554C14 3.06817 10.8668 0 7 0ZM7 10.6643C5.99748 10.6643 5.03602 10.2729 4.32714 9.57624C3.61825 8.87958 3.22 7.9347 3.22 6.94947C3.22 5.96424 3.61825 5.01936 4.32714 4.32269C5.03602 3.62603 5.99748 3.23465 7 3.23465C8.00252 3.23465 8.96398 3.62603 9.67286 4.32269C10.3818 5.01936 10.78 5.96424 10.78 6.94947C10.78 7.9347 10.3818 8.87958 9.67286 9.57624C8.96398 10.2729 8.00252 10.6643 7 10.6643Z" fill="#FFC700"/>
+                </svg>
+                <div class="contacts__item-text">ул. Ленина, 25, офис 65</div>
+              </div>
+              <div class="contacts__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                  <path d="M18.215 14.0622L16.3179 12.1652C15.9745 11.822 15.5445 11.5785 15.0736 11.4605C14.6027 11.3426 14.1087 11.3547 13.6441 11.4955C13.1796 11.6363 12.7619 11.9006 12.4358 12.2601C12.1096 12.6196 11.8872 13.0609 11.7921 13.5369C8.66376 12.952 5.62111 9.92189 5.43172 7.21358C5.96356 7.11575 6.45302 6.85835 6.83502 6.4756C7.33798 5.97259 7.62053 5.29039 7.62053 4.57908C7.62053 3.86776 7.33798 3.18557 6.83502 2.68256L4.93845 0.785492C4.43542 0.282546 3.75322 0 3.04188 0C2.33054 0 1.64833 0.282546 1.14531 0.785492C-4.54494 6.4756 12.5247 23.5448 18.215 17.8547C18.7176 17.3517 19 16.6696 19 15.9585C19 15.2473 18.7176 14.5653 18.215 14.0622Z" fill="#FFC700"/>
+                </svg>
+                <div class="contacts__item-text">+7 (495) 000-00-00</div>
+              </div>
+              <div class="contacts__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 16V2L11 11L0 2V16H22ZM11 8L21 0H1L11 8Z" fill="#FFC700"/>
+                </svg>
+                <div class="contacts__item-text">mail@somemail.com</div>
+              </div>
+              <div class="contacts__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM13.29 14.71L9 10.41V5H11V9.59L14.71 13.3L13.29 14.71Z" fill="#FFC700"/>
+                </svg>
+                <div class="contacts__item-text">
+                  Пн-Пт: 10:00 - 19:00<br>
+                  Сб: 10:00 - 17:00<br>
+                  Вс: выходной
+                </div>
+              </div>
+            </div>
+            <div class="contacts__socials">
+              <a class="contacts__social-link" href="#">
+                <img src="image/icons/inst.svg" alt="">
+              </a>
+              <a class="contacts__social-link" href="#">
+                <img src="image/icons/yt.svg" alt="">
+              </a>
+              <a class="contacts__social-link" href="#">
+                <img src="image/icons/whapp.svg" alt="">
+              </a>
+              <a class="contacts__social-link" href="#">
+                <img src="image/icons/vk.svg" alt="">
+              </a>
+            </div>
+            <img class="contacts__bush-left" src="image/contacts/bush-left.png" alt="">
+          </div>
+        </div>
+        <img class="contacts__bush-right" src="image/contacts/bush-right.png" alt="">
+      </section>
+    </main>
+    <!-- Футер сайта: меню, кнопка, политика конфиденциальности -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__logo" href="index.html">
+            <img src="image/logo2.png" alt="">
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#about">О нас</a></li>
+              <li class="footer__nav-item"><a href="#benefits">Услуги</a></li>
+              <li class="footer__nav-item"><a href="#horses">Фотоальбом</a></li>
+              <li class="footer__nav-item"><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="footer__btn" href="#">
+            <span>Заказать звонок</span>
+          </a>
+        </div>
+        <div class="footer__info">
+          <a href="#">Соглашение на обработку персональных данных</a>
+          <a href="#">Политика конфенденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
